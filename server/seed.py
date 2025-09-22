@@ -27,7 +27,9 @@ def make_messages():
         messages.append(message)
 
     db.session.add_all(messages)
-    db.session.commit()        
+    db.session.commit()  
+
+    print("🌱 Database seeded!")      
 
 if __name__ == '__main__':
     with app.app_context():
